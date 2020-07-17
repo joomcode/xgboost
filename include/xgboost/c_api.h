@@ -124,7 +124,8 @@ XGB_DLL int XGBRegisterLogCallback(void (*callback)(const char*));
  */
 XGB_DLL int XGDMatrixCreateFromFile(const char *fname,
                                     int silent,
-                                    DMatrixHandle *out);
+                                    DMatrixHandle *out,
+                                    size_t page_size=0);
 
 /*!
  * \brief Create a DMatrix from a data iterator.
